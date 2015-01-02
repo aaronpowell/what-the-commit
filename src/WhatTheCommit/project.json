@@ -32,6 +32,6 @@
     },
     "scripts": {
         "postrestore": [ "npm install" ],
-        "prepare": [ "grunt default" ]
+        "postbuild": [ "grunt default" ]
     }
 }
