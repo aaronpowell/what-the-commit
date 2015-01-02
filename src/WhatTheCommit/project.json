@@ -5,6 +5,12 @@
         "wwwroot"
     ],
     "packExclude": [
+        "bower.json",
+        "package.json",
+        "gruntfile.js",
+        "bower_components/**/*.*",
+        "node_modules/**/*.*",
+        "grunt/**/*.*",
         "**.kproj",
         "**.user",
         "**.vspscc"
