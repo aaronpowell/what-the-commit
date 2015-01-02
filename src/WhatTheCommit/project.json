@@ -23,5 +23,9 @@
     },
     "frameworks": {
         "aspnet50": { }
+    },
+    "scripts": {
+        "postrestore": [ "npm install" ],
+        "prepare": [ "grunt default" ]
     }
 }
