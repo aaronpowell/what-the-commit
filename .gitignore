@@ -1,0 +1,8 @@
+artifacts
+node_modules
+bower_components
+*.ide
+*.suo
+*.user
+lib
+bin

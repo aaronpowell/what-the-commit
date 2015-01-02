@@ -1,0 +1,15 @@
+﻿<div data-ng-hide="results.commits.length">
+    <h1>What the Commit?</h1>
+    <p>Need a commit message for your next check in but don't know what it should say? Use the power of crowdsourcing to find what others are using and take that yourself.</p>
+</div>
+
+<div data-ng-show="results.commits.length">
+    <h1>Results for a search of: {{results.term}}</h1>
+    <div data-ng-repeat="result in results.commits" class="panel panel-default">
+        <div class="panel-heading">{{result.Commit.Message}} (<a href="{{result.html_url}}" target="_blank">Link</a>)</div>
+        <div class="panel-body">
+            From <a href="{{result.Repository.html_url}}" target="_blank">{{result.Repository.Name}}</a>.
+            By {{result.Commit.Committer.Name}} at {{result.Commit.Committer.Date}}
+        </div>
+    </div>
+</div>
