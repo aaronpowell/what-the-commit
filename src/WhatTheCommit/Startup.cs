@@ -78,8 +78,8 @@ namespace WhatTheCommit
             //security
             app.UseOAuthAuthentication("Github", options =>
             {
-                options.ClientId = "27cacb5d95744c909bae";
-                options.ClientSecret = "9e04d8fff37d00c34df4883e385394b7842a930c";
+                options.ClientId = Configuration.Get("GithubClientId");
+                options.ClientSecret = Configuration.Get("GithubClientSecret");
                 options.CallbackPath = new PathString("/github-logged-in");
                 options.AuthorizationEndpoint = "https://github.com/login/oauth/authorize";
                 options.TokenEndpoint = "https://github.com/login/oauth/access_token";
